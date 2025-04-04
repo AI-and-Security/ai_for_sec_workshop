@@ -1,0 +1,21 @@
+osint_task:
+  description: >
+    Conduct OSINT aka Open Source Intelligence to identify and list all active subdomains of {domain}
+  expected_output: >
+    Bulleted list of active subdomains
+  agent: osint_researcher
+
+
+scraper_task:
+  description: >
+    Scrape each subdomain provided by the osint_researcher and extract detailed information like contact e-mail addresses
+  expected_output: >
+    Bulleted list of eamil addresses per subdomain
+  agent: web_scraper
+
+writer_task:
+  description: >
+    Document information gathered so far
+  expected_output: >
+    A table with {domain}, its subdomains and e-mail addresses associaated
+  agent: writer

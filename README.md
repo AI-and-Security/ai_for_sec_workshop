@@ -6,10 +6,11 @@ The authors have tested this in the following environments
 
 
 ### Instructions
+#### MacOS
 1. Install uv (uv manages python versions, packages and dependencies)
-a. Follow your preferred method of installation [here](https://docs.astral.sh/uv/getting-started/installation/). We recommend Homebrew installs on Mac
-b. Run `uv python list` and note this output. This will be used later. 
-c. Add the following to your login shell settings (Ex: ~/.bash_profile on Mac)
+- Follow your preferred method of installation [here](https://docs.astral.sh/uv/getting-started/installation/). We recommend Homebrew installs on Mac
+- Run `uv python list` and note this output. This will be used later. 
+- Add the following to your login shell settings (Ex: ~/.bash_profile on Mac)
 ```
 eval "$(uv generate-shell-completion bash)"
 export PATH="$PATH:<your output from step 1b>" (It should look something like: export PATH="$PATH:$HOME/path/to/uv/python/cpython-3.10.16-macos-aarch64-none/bin/")
@@ -19,6 +20,7 @@ export UV_PYTHON_PREFERENCE="only-managed"
 2. Git clone this repository by running:  `git clone git@github.com:AI-and-Security/ai_for_sec_workshop.git`
 
 3. Inside the repository, run the command to test your execution environment. The output is self-explanatory
+
 `uv run test.py` 
 
 4. In your favorite IDE, navigate to repository/notebooks and click on test.ipynb
@@ -27,3 +29,6 @@ export UV_PYTHON_PREFERENCE="only-managed"
 - Execute the first cell to test the environment for notebook execution. The output is self-explanatory
 
 5. Download datasets from the provided Google Drive. Add all the datasets to the data folder
+
+
+#### Windows
