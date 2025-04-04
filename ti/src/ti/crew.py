@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai_tools import ScrapeWebsiteTool, SerperDevTool
+from crewai_tools import SerperDevTool, WebsiteSearchTool
 
 # If you want to run a snippet of code before or after the crew starts,
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -25,6 +25,7 @@ class Ti:
         return Agent(
             config=self.agents_config["osint_researcher"],
             verbose=True,
+            allow_delegation=False,
             tools=[SerperDevTool()],
         )
 
@@ -33,7 +34,8 @@ class Ti:
         return Agent(
             config=self.agents_config["web_scraper"],
             verbose=True,
-            tools=[ScrapeWebsiteTool],
+            allow_delegation=False,
+            tools=[WebsiteSearchTool()],
         )
 
     @agent

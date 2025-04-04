@@ -2,7 +2,7 @@ osint_researcher:
   role: >
     OSINT Researcher
   goal: >
-    Gather security intelligence on {domain} from search engines
+    Gather security intelligence on {topic} from search engines
   backstory: >
     As a seasoned cyber threat researcher, you excel at finding and extracting security relevant information
   llm: openrouter/openai/o1
@@ -11,9 +11,11 @@ web_scraper:
   role: >
     Web Scraper
   goal: >
-    Gather website data and related information
+    Gather website data and related information. 
+    Dig deep to collect all information as part of the intelligence gathering process
   backstory: >
-    Examine webistes and gather information
+    You are an expert in web content and its rendering. 
+    You use your expertise to examine webistes and gather information
   llm: openrouter/openai/o3-mini-high
 
 writer:

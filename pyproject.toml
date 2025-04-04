@@ -5,13 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "crewai[tools]>=0.108.0",
     "deepeval>=2.6.6",
     "ipykernel>=6.29.5",
     "langchain>=0.3.22",
     "matplotlib>=3.10.1",
     "pandas>=2.2.3",
     "pandasai>=2.0.24",
+    "scapy>=2.6.1",
     "scikit-learn>=1.6.1",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.4",
