@@ -18,9 +18,11 @@ dependencies = [
     { name = "deepeval" },
     { name = "ipykernel" },
     { name = "langchain" },
+    { name = "langchain-openrouter" },
     { name = "matplotlib" },
     { name = "pandas" },
     { name = "pandasai" },
+    { name = "python-dotenv" },
     { name = "scapy" },
     { name = "scikit-learn" },
     { name = "seaborn" },
@@ -33,9 +35,11 @@ requires-dist = [
     { name = "deepeval", specifier = ">=2.6.6" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "langchain", specifier = ">=0.3.22" },
+    { name = "langchain-openrouter", specifier = ">=0.0.1" },
     { name = "matplotlib", specifier = ">=3.10.1" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "pandasai", specifier = ">=2.0.24" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
     { name = "scapy", specifier = ">=2.6.1" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
     { name = "seaborn", specifier = ">=0.13.2" },
@@ -1630,6 +1634,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/e5/fd/8256eba9a159f95a13c5bf7f1f49683de93b3876585b768e6be5dc3a5765/langchain_openai-0.2.14.tar.gz", hash = "sha256:7a514f309e356b182a337c0ed36ab3fbe34d9834a235a3b85cb7f91ae775d978", size = 43647 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ed/54/63c8264d7dbc3bf31ba61bf97740fdd76386b2d4f9a58f58afd3961ce7d7/langchain_openai-0.2.14-py3-none-any.whl", hash = "sha256:d232496662f79ece9a11caf7d798ba863e559c771bc366814f7688e0fe664fe8", size = 50876 },
+]
+
+[[package]]
+name = "langchain-openrouter"
+version = "0.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ac/7c/4fefada8f7ececa3e1b1c7338d38e61a08f3ba35a4ce511ac87cc7fb154c/langchain_openrouter-0.0.1.tar.gz", hash = "sha256:afc193cf7a0599fb6786a91644180f21557fd2a37d061506b4475d7e9e3be75d", size = 2559 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3c/00/67ce61f767834c8ed2b748f1e4931aa7c3253d91e0101acc38bed39c8f13/langchain_openrouter-0.0.1-py3-none-any.whl", hash = "sha256:abe643add05285e2116238da0ad24a0347e876719e492caede5f09df9a433ce4", size = 2801 },
 ]
 
 [[package]]
